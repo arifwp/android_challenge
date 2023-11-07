@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1089347549312",
+    "firebase_url": "https://android-challenge-f6f42-default-rtdb.firebaseio.com",
+    "project_id": "android-challenge-f6f42",
+    "storage_bucket": "android-challenge-f6f42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089347549312:android:e1cb729585ce8d37ef8e65",
+        "android_client_info": {
+          "package_name": "com.example.android_challenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089347549312-l6b1b1g3i8m539jj2n07sn3nfte4kapb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android_challenge",
+            "certificate_hash": "359718f07955bcd7e0be7b7571f1ea531862c5af"
+          }
+        },
+        {
+          "client_id": "1089347549312-vlc1csmtmfj87o2dpofg80geaan4a8n7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClaeeCTkIOG3jOhBBZANehrLx4x5KGY2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089347549312-vlc1csmtmfj87o2dpofg80geaan4a8n7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

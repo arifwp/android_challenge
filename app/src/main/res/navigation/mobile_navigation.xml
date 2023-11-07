@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/login_fragment">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.android_challenge.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_transaction_fragment"
+            app:destination="@id/transaction_fragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_camera_fragment"
+            app:destination="@id/camera_fragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_login_fragment"
+            app:destination="@id/login_fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.android_challenge.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.android_challenge.ui.auth.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_fragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/login_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transaction_fragment"
+        android:name="com.example.android_challenge.ui.home.TransactionFragment"
+        android:label="@string/transaction"
+        tools:layout="@layout/fragment_transaction" >
+        <argument
+            android:name="productId"
+            app:argType="string"
+            app:nullable="true"/>
+        <argument
+            android:name="productName"
+            app:argType="string"
+            app:nullable="true"/>
+        <argument
+            android:name="productPrice"
+            app:argType="string"
+            app:nullable="true"/>
+        <argument
+            android:name="productPhoto"
+            app:argType="string"
+            app:nullable="true"/>
+        <action
+            android:id="@+id/action_transaction_fragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/transaction_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/camera_fragment"
+        android:name="com.example.android_challenge.ui.home.CameraFragment"
+        android:label="@string/camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_camera_fragment_to_result_scanner_fragment"
+            app:destination="@id/result_scanner_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/result_scanner_fragment"
+        android:name="com.example.android_challenge.ui.home.ResultScannerFragment"
+        android:label="@string/result_scanner"
+        tools:layout="@layout/fragment_result_scanner">
+        <argument
+            android:name="result"
+            app:argType="string"
+            app:nullable="true"/>
+        <action
+            android:id="@+id/action_result_scanner_fragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/result_scanner_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

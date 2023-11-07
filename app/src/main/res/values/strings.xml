@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">android_challenge</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_history">History</string>
+    <string name="login">Login</string>
+    <string name="default_web_client_id">1089347549312-vlc1csmtmfj87o2dpofg80geaan4a8n7.apps.googleusercontent.com</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="example_name">Unknown person</string>
+    <string name="total_balance">Balance</string>
+    <string name="dummy_balance">5000000</string>
+    <string name="product">Product</string>
+    <string name="dummy_product_name">Apple Watch</string>
+    <string name="dummy_category">Watch</string>
+    <string name="dummy_price">25000</string>
+    <string name="checkout">Checkout</string>
+    <string name="transaction">Transaction</string>
+    <string name="camera">Camera</string>
+    <string name="result_scanner">Result scanner</string>
+</resources>

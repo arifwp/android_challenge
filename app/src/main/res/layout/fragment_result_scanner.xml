@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="@dimen/dimen_24"
+    tools:context=".ui.home.ResultScannerFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result scanner :"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_medium" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/result_scanner"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:layout_marginTop="@dimen/dimen_6" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_54"
+        app:cornerRadius="@dimen/dimen_10"
+        android:text="Back To Home"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:layout_marginTop="@dimen/dimen_32" />
+
+
+</LinearLayout>
